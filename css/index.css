@@ -237,3 +237,31 @@ header p {
   box-shadow: 5px 10px 5px #888888;
   margin: 4% 0%;
 }
+.success-stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: brown;
+  color: white;
+  margin: 2% 0%;
+}
+.success-stories h2 {
+  margin: 2% 0%;
+}
+.success-stories div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+.success-stories div img {
+  border-radius: 50%;
+}
+.success-stories .mobile-hidden {
+  display: none;
+}
+.success-stories .name {
+  text-align: right;
+}
