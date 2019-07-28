@@ -150,8 +150,8 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
-h4 {
-  font-size: 2.5rem;
+h3 {
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 p {
@@ -264,4 +264,28 @@ header p {
 }
 .success-stories .name {
   text-align: right;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.features .outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.features .outer div {
+  margin: 2% 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.features .outer div img {
+  margin-right: 5%;
 }
