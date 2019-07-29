@@ -230,6 +230,26 @@ header button {
   color: white;
   padding: 2% 6%;
   font-size: 1.8rem;
+  cursor: pointer;
+}
+header button:hover {
+  animation-name: colorFlip;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorFlip {
+  0% {
+    background: #b80c09;
+    color: white;
+  }
+  50% {
+    background: white;
+    color: #b80c09;
+  }
+  100% {
+    background: #b80c09;
+    color: white;
+  }
 }
 .info-cards {
   display: flex;
@@ -409,6 +429,29 @@ header button {
   border: 2px solid #222e50;
   color: white;
   padding: 1% 3%;
+  cursor: pointer;
+}
+.contact .subscription button:hover {
+  animation-name: colorFlip;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorFlip {
+  0% {
+    background: #b80c09;
+    color: white;
+  }
+  50% {
+    background: white;
+    color: #b80c09;
+  }
+  100% {
+    background: #b80c09;
+    color: white;
+  }
+}
+.contact .subscription input {
+  padding: 1%;
 }
 footer {
   display: flex;
