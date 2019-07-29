@@ -153,6 +153,7 @@ header{
     .flex(column, center, center);
     border-top:1px solid black;
     border-bottom: 1px solid black;
+    
     background:@spaceCadet;
     color:white;
     padding: 2% 0%;
@@ -189,5 +190,18 @@ header{
         input{
             padding:1%;
         }
+    }
+    @media @desktop{
+        flex-direction:row;
+        justify-content: space-around;
+        padding:2% 0%;
+        .contact-top,{
+            width:60%;
+
+        }
+        .subscription{
+            width:30%;
+        }
+
     }
 }

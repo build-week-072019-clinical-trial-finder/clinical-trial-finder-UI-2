@@ -136,6 +136,9 @@ html,
 body {
   font-family: 'PT Sans Narrow', sans-serif;
 }
+body {
+  background: #222e50;
+}
 h1,
 h2,
 h3,
@@ -452,6 +455,19 @@ header button:hover {
 }
 .contact .subscription input {
   padding: 1%;
+}
+@media (min-width:800px) {
+  .contact {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 0%;
+  }
+  .contact .contact-top {
+    width: 60%;
+  }
+  .contact .subscription {
+    width: 30%;
+  }
 }
 footer {
   display: flex;
