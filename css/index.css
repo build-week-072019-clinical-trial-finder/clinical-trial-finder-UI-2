@@ -264,6 +264,18 @@ header button {
   box-shadow: 5px 10px 5px #222e50;
   margin: 8% 0%;
 }
+@media (min-width:500px) {
+  .info-cards {
+    flex-direction: row;
+  }
+  .info-cards div {
+    width: 30%;
+    margin: 2% 1%;
+  }
+  .info-cards div:hover {
+    margin: 3% 2%;
+  }
+}
 .success-stories {
   display: flex;
   flex-direction: column;
