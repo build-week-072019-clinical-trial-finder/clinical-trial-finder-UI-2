@@ -226,6 +226,7 @@ header button {
 }
 .info-cards div {
   width: 80%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,7 +236,7 @@ header button {
   background: white;
 }
 .info-cards div img {
-  max-width: 100%;
+  height: 250px;
 }
 .info-cards div p {
   border-top: 2px solid black;
@@ -307,6 +308,9 @@ header button {
 }
 .features .outer div img {
   margin-right: 5%;
+}
+.features .outer .odd {
+  flex-direction: row-reverse;
 }
 .features .outer:last-child {
   border-bottom: none;
