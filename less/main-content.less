@@ -1,8 +1,8 @@
 header{
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     max-width:100%;
-    border-top:1px solid black;
-    border-bottom: 1px solid black;
+    border-top:2px solid black;
+    border-bottom: 2px solid black;
     padding:15% 0%;
     color:black;
     .flex(column, center, center);
@@ -11,6 +11,13 @@ header{
     }
     p{
         margin:1%;
+    }
+    button{
+        background:@internationalOrange;
+        border:2px solid @spaceCadet;
+        color:white;
+        padding:2% 6%;
+        font-size: 1.8rem;
     }
 }
 
@@ -21,6 +28,7 @@ header{
         .flex(column, center, center);
         border:2px solid black;
         margin:2% 0%;
+        background:white;
         img{
             max-width:100%;
         }
@@ -29,12 +37,14 @@ header{
             width:100%;
             text-align:center;
             padding:2%;
+            background:@spaceCadet;
+            color:white;
         }
     }
     div:hover{
         transform:scale(1.1);
-        box-shadow: 5px 10px 5px #888888;
-        margin:4% 0%;
+        box-shadow: 5px 10px 5px @spaceCadet;
+        margin:8% 0%;
     }
 }
 
@@ -53,6 +63,9 @@ header{
         img{
             border-radius: 50%;
         }
+        p{
+            font-size:1.8rem;
+        }
         
     }
     .mobile-hidden{
@@ -60,6 +73,7 @@ header{
     }
     .name{
         text-align:right;
+        font-size:1.6rem;
     }
 }
 
@@ -69,6 +83,8 @@ header{
     margin:auto;
     .outer{
         .flex(column, center, center);
+        border-bottom:1px solid @spaceCadet;
+        margin:2% 0%;
         div{
             margin:2% 0%;
             .flex(row, space-between, center);
@@ -77,27 +93,42 @@ header{
             }
         }
     }
+    .outer:last-child{
+        border-bottom:none;
+    }
 }
 
 .contact{
     .flex(column, center, center);
     border-top:1px solid black;
     border-bottom: 1px solid black;
+    background:@spaceCadet;
+    color:white;
     padding: 2% 0%;
     .contact-top{
         width: 90%;
         .flex(row, space-between, center);
 
         .lists li{
-            list-style:square;
             font-size:1.4rem;
-           
+            line-height: 1.5;
+        }
+
+        h3{
+            border-bottom:1px solid white;
+            margin-bottom:10%;
         }
     }
 
     .subscription{
         margin-top:2%;
         text-align:center;
-
+        width:100%;
+        button{
+            background:@internationalOrange;
+            border:2px solid @spaceCadet;
+            color:white;
+            padding:1% 3%;
+        }
     }
 }
