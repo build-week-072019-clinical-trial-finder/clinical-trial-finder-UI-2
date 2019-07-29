@@ -288,25 +288,58 @@ header button {
 .success-stories h2 {
   margin: 2% 0%;
 }
-.success-stories div {
+.success-stories .people {
   width: 80%;
+}
+.success-stories .people .story {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: space-between;
 }
-.success-stories div img {
+.success-stories .people .story img {
   border-radius: 50%;
 }
-.success-stories div p {
+.success-stories .people .story p {
   font-size: 1.8rem;
 }
-.success-stories .mobile-hidden {
+.success-stories .people .mobile-hidden {
   display: none;
 }
-.success-stories .name {
+.success-stories .people .name {
   text-align: right;
   font-size: 1.6rem;
+}
+@media (min-width:500px) {
+  .success-stories {
+    padding-bottom: 2%;
+  }
+  .success-stories .people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .success-stories .people .story {
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    border: 2px solid #222e50;
+    padding: 2%;
+  }
+  .success-stories .people .story div {
+    width: 45%;
+  }
+  .success-stories .people .story img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .success-stories .people .mobile-hidden {
+    display: flex;
+  }
 }
 .features {
   display: flex;

@@ -70,8 +70,9 @@ header{
     h2{
         margin:2% 0%;
     }
-    div{
+    .people{
         width:80%;
+        .story{
         .flex(column, center, space-between);
         img{
             border-radius: 50%;
@@ -88,8 +89,36 @@ header{
         text-align:right;
         font-size:1.6rem;
     }
-
+    }
     
+
+    @media @tablet{
+        padding-bottom:2%;
+        .people{
+            .flex(row,space-around, center);
+            width:100%;
+            .story{
+            width:30%;
+            flex-direction:column;
+            justify-content: space-between;
+            align-content:center;
+            border:2px solid @spaceCadet;
+            padding:2%;
+            div{
+                width:45%;
+            }
+            img{
+                width:250px;
+                height:200px;
+                object-fit: cover;
+            }
+        }
+        .mobile-hidden{
+            display:flex;
+        }
+        }
+
+    }
 }
 
 .features{
