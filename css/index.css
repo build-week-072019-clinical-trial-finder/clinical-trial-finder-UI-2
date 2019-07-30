@@ -490,13 +490,28 @@ header button:hover {
 }
 .teamInfo div {
   width: 45%;
+  border: 1px solid #222e50;
+  padding: 1%;
+  margin: 2% 0%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .teamInfo div img {
   margin: 2% 0%;
+}
+.teamInfo div .icons {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  margin-bottom: 4%;
+  border: none;
+}
+.teamInfo div .icons i {
+  cursor: pointer;
 }
 @media (min-width:500px) {
   .teamInfo div {
