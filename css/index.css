@@ -184,6 +184,10 @@ nav {
 nav div {
   margin: 2% 0%;
 }
+nav .logo {
+  max-width: 100%;
+  width: 40%;
+}
 nav .links {
   width: 100%;
   display: flex;
@@ -207,6 +211,9 @@ nav .links a {
   nav .links {
     width: 60%;
     font-size: 1.8rem;
+  }
+  nav .logo {
+    width: 20%;
   }
 }
 .about-nav .links {
