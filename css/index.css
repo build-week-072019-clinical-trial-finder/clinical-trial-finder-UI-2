@@ -478,6 +478,31 @@ header button:hover {
     width: 30%;
   }
 }
+.teamInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 4%;
+}
+.teamInfo div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teamInfo div img {
+  margin: 2% 0%;
+}
+@media (min-width:500px) {
+  .teamInfo div {
+    width: 30%;
+  }
+}
 footer {
   display: flex;
   flex-direction: column-reverse;

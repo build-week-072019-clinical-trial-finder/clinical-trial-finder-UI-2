@@ -213,3 +213,24 @@ header{
 
     }
 }
+
+.teamInfo{
+    .flex(row,space-between, center);
+    flex-wrap:wrap;
+    width:80%;
+    margin-left:10%;
+    padding-top:4%;
+    div{
+        width:45%;
+        .flex(column, center ,center);
+        img{
+            margin:2% 0%;
+        }
+    }
+
+    @media @tablet{
+        div{
+            width:30%;
+        }
+    }
+}
