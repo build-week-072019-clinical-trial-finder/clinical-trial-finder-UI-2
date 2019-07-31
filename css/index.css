@@ -243,7 +243,11 @@ header p {
   margin: 1%;
   text-align: center;
 }
-header button {
+header a {
+  width: 100%;
+  text-align: center;
+}
+header a button {
   background: #b80c09;
   border: 2px solid #222e50;
   color: white;
@@ -251,7 +255,7 @@ header button {
   font-size: 1.8rem;
   cursor: pointer;
 }
-header button:hover {
+header a button:hover {
   animation-name: colorFlip;
   animation-duration: 2s;
   animation-iteration-count: infinite;
