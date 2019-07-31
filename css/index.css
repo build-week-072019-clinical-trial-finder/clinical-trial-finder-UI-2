@@ -187,6 +187,11 @@ nav div {
 nav .logo {
   max-width: 100%;
   width: 20%;
+  display: flex;
+  justify-content: center;
+}
+nav .logo img {
+  width: 80%;
 }
 nav .links {
   width: 100%;
@@ -205,15 +210,12 @@ nav .links a {
     flex-direction: row;
     justify-content: space-between;
   }
-  nav div {
-    margin-left: 4%;
-  }
   nav .links {
     width: 60%;
     font-size: 1.8rem;
   }
-  nav .logo {
-    width: 20%;
+  nav .logo img {
+    width: 40%;
   }
 }
 .about-nav .links {
@@ -236,6 +238,7 @@ header h1 {
 }
 header p {
   margin: 1%;
+  text-align: center;
 }
 header button {
   background: #b80c09;
@@ -498,6 +501,8 @@ header button:hover {
 .teamInfo div {
   width: 45%;
   border: 1px solid #222e50;
+  background: #007991;
+  color: white;
   padding: 1%;
   margin: 2% 0%;
   display: flex;

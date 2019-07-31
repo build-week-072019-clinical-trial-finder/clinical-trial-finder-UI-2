@@ -9,6 +9,11 @@ nav{
     .logo{
         max-width:100%;
         width:20%;
+        display:flex;
+        justify-content:center;
+        img{
+            width:80%;
+        }
     }
     .links{
         width:100%;
@@ -24,15 +29,14 @@ nav{
     @media @tablet{
        flex-direction:row;
        justify-content:space-between;
-       div{
-           margin-left:4%;
-       }
        .links{
            width:60%;
            font-size:1.8rem;
        }
        .logo{
-           width:20%;
+           img{
+               width:40%;
+           }
        }
     }
 }
