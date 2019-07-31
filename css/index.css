@@ -535,9 +535,15 @@ header a button:hover {
 .teamInfo div .icons i {
   cursor: pointer;
 }
+.teamInfo .ti-Last {
+  margin-left: 25%;
+}
 @media (min-width:500px) {
   .teamInfo div {
     width: 30%;
+  }
+  .teamInfo .ti-Last {
+    margin-left: 0%;
   }
 }
 footer {
