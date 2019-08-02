@@ -417,6 +417,10 @@ header a button:hover {
 .features .outer .odd {
   flex-direction: row-reverse;
 }
+.features .outer .odd img {
+  margin-right: 0;
+  margin-left: 5%;
+}
 .features .outer:last-child {
   border-bottom: none;
 }
