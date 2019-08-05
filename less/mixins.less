@@ -1,0 +1,28 @@
+.flex(@direction, @justify, @align){
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items:@align;
+}
+
+.colorFlip(@bgColor, @fontColor){
+    animation-name:colorFlip;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+
+    @keyframes colorFlip{
+        0%{
+            background: @bgColor;
+            color: @fontColor;
+        }
+        50%{
+            background: @fontColor;
+            color: @bgColor;
+            
+        }
+        100%{
+            background: @bgColor;
+            color: @fontColor;
+        }
+    }
+}

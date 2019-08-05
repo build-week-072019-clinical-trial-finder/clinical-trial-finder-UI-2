@@ -1,0 +1,48 @@
+nav{
+    .flex(column, center, center);
+    padding-top:2%;
+    background:@seaBlue;
+    color:white;
+    div{
+        margin:2% 0%;
+    }
+    .logo{
+        max-width:100%;
+        width:20%;
+        display:flex;
+        justify-content:center;
+        img{
+            width:80%;
+        }
+    }
+    .links{
+        width:100%;
+        .flex(row, space-around, center);
+        font-size:1.6rem;
+        a{
+            text-decoration:none;
+            color:white;
+            &:hover{
+                transform:scale(1.2);
+            }
+        }
+    }
+
+    @media @tablet{
+       flex-direction:row;
+       justify-content:space-between;
+       .links{
+           width:60%;
+           font-size:1.8rem;
+       }
+       .logo{
+           img{
+               width:40%;
+           }
+       }
+    }
+}
+
+.about-nav .links{
+    width:30%;
+}
